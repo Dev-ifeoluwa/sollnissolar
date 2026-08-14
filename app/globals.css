@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #060a13;
+  color: #f6f4ec;
+}
+
+::selection {
+  background-color: #f4a522;
+  color: #060a13;
+}
+
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid #f4a522;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Thin, on-brand scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1220;
+}
+::-webkit-scrollbar-thumb {
+  background: #28395a;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f4a522;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Motion path support for the hero power-flow signature element */
+.flow-dot {
+  offset-path: path("M40 20 C40 100 40 100 40 180 C40 260 200 260 200 340 C200 420 240 420 240 460");
+  offset-rotate: 0deg;
+  animation: flow-dot 3.6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
