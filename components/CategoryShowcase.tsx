@@ -37,7 +37,8 @@ export default function CategoryShowcase() {
               transition={{ duration: 0.5, delay: (i % 4) * 0.06 }}
             >
               <Link
-                href={`/shop?category=${encodeURIComponent(cat)}`}
+                href="/"
+                // href={`/shop?category=${encodeURIComponent(cat)}`}
                 className={`group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-navy-700/70 bg-gradient-to-br ${meta.gradient} bg-navy-800/40 p-5 transition-all hover:-translate-y-1 hover:border-gold-400/50`}
               >
                 <div className="flex items-start justify-between">
