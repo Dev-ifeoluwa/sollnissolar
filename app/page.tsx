@@ -12,7 +12,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <CategoryShowcase />
-      <FeaturedProducts />
+      {/* <FeaturedProducts /> */}
       <WhySollnis />
       <CTASection />
       <Footer />
