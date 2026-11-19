@@ -1,4 +1,4 @@
-import { BatteryCharging, Home, PanelsTopLeft, Sun } from "lucide-react";
+import { BatteryCharging, Home, PanelsTopLeft, Sun, PlugZap } from "lucide-react";
 
 const nodes = [
   { Icon: Sun, top: 0, left: 20, label: "Sunlight", ring: "ring-gold-400/50" },
@@ -9,11 +9,18 @@ const nodes = [
     label: "Panel",
     ring: "ring-amber-400/50",
   },
+  // {
+  //   Icon: BatteryCharging,
+  //   top: 320,
+  //   left: 180,
+  //   label: "System",
+  //   ring: "ring-emerald-400/50",
+  // },
   {
-    Icon: BatteryCharging,
+    Icon: PlugZap,
     top: 320,
     left: 180,
-    label: "Battery",
+    label: "System",
     ring: "ring-emerald-400/50",
   },
   {

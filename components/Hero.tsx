@@ -58,7 +58,7 @@ export default function Hero() {
             custom={2}
             className="mt-6 max-w-xl text-balance text-lg leading-relaxed text-slate-400"
           >
-            Sollnis Solar designs, sells and installs generators,
+            Sollnissolar designs, sells and installs generators,
             inverters, panels and everyday solar appliances built for
             Nigerian homes and businesses — sized correctly the first
             time, backed by real warranty support.
@@ -72,7 +72,8 @@ export default function Hero() {
             className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center"
           >
             <Link
-              href="/shop"
+              href="/"
+              // href="/shop"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-7 py-3.5 text-sm font-semibold text-navy-950 shadow-[0_0_24px_rgba(244,165,34,0.4)] transition-all hover:-translate-y-0.5 hover:bg-gold-400 hover:shadow-[0_0_32px_rgba(244,165,34,0.6)]"
             >
               Shop the Range
@@ -94,8 +95,8 @@ export default function Hero() {
             className="mt-14 grid max-w-lg grid-cols-3 gap-6 border-t border-navy-700/70 pt-8"
           >
             {[
-              ["6,000+", "Systems Installed"],
-              ["1.4MW", "Capacity Deployed"],
+              ["20+", "Systems Installed"],
+              ["16kWh", "Capacity Deployed"],
               ["24/7", "Support Line"],
             ].map(([value, label]) => (
               <div key={label}>

@@ -8,7 +8,7 @@ import clsx from "clsx";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/shop", label: "Shop" },
+  // { href: "/shop", label: "Shop" },
   { href: "/#why", label: "Why Sollnis" },
   { href: "/#contact", label: "Contact" },
 ];
